@@ -1,14 +1,20 @@
+body {
+    font-family: 'Apercu', sans-serif;
+}
+
+
 h1 {
-	font-family: Optima;
-	text-align: center; 
+    font-weight: 550;
+	text-align: left; 
 	font-size: 60px;
-	padding:10% 0 0 0;
+	padding:0 2% 0 0;
+    float: left;
 }
 
 h3 {
-	font-family: Optima;
 	text-align: center;
 	font-size: 20px;
+    font-weight: 400;
 }
 
 p {
@@ -16,58 +22,66 @@ p {
 }
 
 hr {
-	width: 50%;
+	width: 70%;
 	border-color: #C0C0C0;
 }
 
-.trans--grow{
-  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
-  transition: width 1s  ease-out;
-  width : 0%;
+#subheader {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 4%;
 }
 
-.grow{
-  width:50%;
+#fullpage{
+    padding: 0 10% 0 10%;
 }
 
-.landing{
-	height: 100vh;
-	text-align: center;
-	padding: 10% 10% 10% 10%;
+
+.sectionabout{
+    margin: 10% 0 10% 0;
 }
 
 .fab{
 	font-size: 20px;
 }
 
-.fa-instagram{
-	margin-left: 10px;
+.sectionabout {
+    margin: 40px 10px 0 10px;
 }
 
-.icons{
-	text-align: center;
-	padding: 1% 0 0 0;
-}
 
 .otherpages {
 	text-align: center;
 }
 
 .about {
-	font-family: Optima;
 	font-size: 40px;
 	margin-top: 8px;
 	text-align: center;
-	padding: 0 10% 10% 10%;
+	
+}
+
+#aboutpar {
+    text-align: left;
+    padding-top: 2%;
 }
 
 #aboutheader{
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+    text-align: left;
 }
 
 #underabout {
 	margin-top: 2px;
 	width: 135px;
 	border-color: black;
+}
+
+#projectsheader {
+    text-align: left;
+}
+
+#underprojects{
+    width: 135px;
 }
