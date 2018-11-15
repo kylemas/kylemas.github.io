@@ -6,7 +6,7 @@ body {
 	outline: none;
 	text-decoration: none;
 	position: relative;
-	font-size: 8.5vw;
+	font-size: 9vw;
 	line-height: 1;
 	color: #9e9ba4;
 	display: inline-block;
@@ -161,6 +161,46 @@ body {
 
 .link--project:hover::before {
 	width: 100%;
+}
+
+h3 {
+    outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 9vw;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+
+h3, h3:after, h3:before {
+    text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #b2b0a9;
+    font-size: 5vw;
+}
+
+h3:after {
+    content: "COMING SOON";
+    opacity: 0;
+}
+
+h3:before {
+    content: "PROJECTS";
+    opacity: 1;
+}
+
+h3:after, div:before {
+    transition: opacity 0.5s linear;
+}
+
+.wrap:hover:before {
+    opacity: 0;
+}
+.wrap:hover:after {
+    opacity: 1;
 }
 
 /* END of Animation for Projects */
