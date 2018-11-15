@@ -2,11 +2,15 @@ body {
     font-family: 'Apercu', sans-serif;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .link {
 	outline: none;
 	text-decoration: none;
 	position: relative;
-	font-size: 9vw;
+	font-size: 120px;
 	line-height: 1;
 	color: #9e9ba4;
 	display: inline-block;
@@ -18,7 +22,7 @@ body {
 	text-transform: uppercase;
 	font-weight: 900;
 	overflow: hidden;
-	line-height: 0.75;
+	line-height: 0.9;
 	color: #b2b0a9;
 }
 
@@ -50,9 +54,9 @@ body {
 	z-index: 2;
 	overflow: hidden;
 	color:#0080FF;
-	white-space: nowrap;
+	white-space: normal;
 	width: 0%;
-	transition: width 0.4s 0.3s;
+	transition: width 0.2s 0.1s;
 }
 
 .link--header:hover::before {
@@ -104,7 +108,7 @@ body {
 	color: #00CC66;
 	white-space: nowrap;
 	width: 0%;
-	transition: width 0.4s 0.3s;
+	transition: width 0.2s 0.1s;
 }
 
 .link--about:hover::before {
@@ -115,53 +119,6 @@ body {
 
 /* START of Animation for Projects */
 
-.link--project {
-	text-transform: uppercase;
-	font-weight: 900;
-	overflow: hidden;
-	line-height: 0.75;
-	color: #b2b0a9;
-    font-size: 7vw;
-    float: left;
-    font-size: 5vw;
-}
-
-.link--project:hover {
-	color: #b2b0a9;
-}
-
-.link--project::after {
-	content: '';
-	position: absolute;gi
-	height: 16px;
-	width: 100%;
-	top: 50%;
-	margin-top: -8px;
-	right: 0;
-	background: #F9F9F9;
-	transform: translate3d(-100%,0,0);
-	transition: transform 0.4s;
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-}
-
-.link--project:hover::after {
-	transform: translate3d(100%,0,0);
-}
-
-.link--project::before {
-	content: attr(data-letters);
-	position: absolute;
-	z-index: 2;
-	overflow: hidden;
-	color: #FF9933;
-	white-space: nowrap;
-	width: 0%;
-	transition: width 0.4s 0.3s;
-}
-
-.link--project:hover::before {
-	width: 100%;
-}
 
 h3 {
     outline: none;
@@ -183,8 +140,9 @@ h3, h3:after, h3:before {
 }
 
 h3:after {
-    content: "COMING SOON";
+    content: "UNDER CONSTRUCTION";
     opacity: 0;
+    color: black;
 }
 
 h3:before {
@@ -193,11 +151,11 @@ h3:before {
 }
 
 h3:after, div:before {
-    transition: opacity 0.5s linear;
+    transition: opacity 0.3s linear;
 }
 
 .wrap:hover:before {
-    opacity: 0;
+    opacity: 0.2;
 }
 .wrap:hover:after {
     opacity: 1;
@@ -249,7 +207,7 @@ h3:after, div:before {
 	color: #FF3399;
 	white-space: nowrap;
 	width: 0%;
-	transition: width 0.4s 0.3s;
+	transition: width 0.2s 0.1s;
 }
 
 .link--contact:hover::before {
@@ -264,7 +222,7 @@ hr {
 }
 
 p {
-    font-size: 20px;
+    font-size: 20px;;
     margin-left: 2%;
 }
 
