@@ -1,3 +1,5 @@
-setTimeout(function(){
-    $('.trans--grow').addClass('grow');
-}, 275);
+$(document).ready(function(){
+	$('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
