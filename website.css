@@ -12,7 +12,7 @@ a {
 	position: relative;
 	font-size: 120px;
 	line-height: 1;
-	color: #9e9ba4;
+	color: #606060;
 	display: inline-block;
 }
 
@@ -23,11 +23,11 @@ a {
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.9;
-	color: #b2b0a9;
+	color: #606060;
 }
 
 .link--header:hover {
-	color: #b2b0a9;
+	color: #606060;
 }
 
 .link--header::after {
@@ -66,20 +66,21 @@ a {
 
 /* START of Animation for About */
 
+
 .link--about {
 	text-transform: uppercase;
     float: left;
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-	color: #b2b0a9;
-    font-size: 5vw;
+	color: #606060;
+    font-size: 75px;
     float: left;
-
+    padding-top: 2%;
 }
 
 .link--about:hover {
-	color: #b2b0a9;
+	color: #606060;
 }
 
 .link--about::after {
@@ -105,7 +106,7 @@ a {
 	position: absolute;
 	z-index: 2;
 	overflow: hidden;
-	color: #00CC66;
+	color: #20B2AA;
 	white-space: nowrap;
 	width: 0%;
 	transition: width 0.2s 0.1s;
@@ -119,30 +120,31 @@ a {
 
 /* START of Animation for Projects */
 
-
 h3 {
     outline: none;
-	text-decoration: none;
-	position: relative;
-	font-size: 9vw;
-	line-height: 1;
-	color: #9e9ba4;
-	display: inline-block;
+    text-decoration: none;
+    position: relative;
+    font-size: 73px;
+    line-height: 1;
+    color: #b2b0a9;
+    display: inline-block;
 }
 
 h3, h3:after, h3:before {
     text-transform: uppercase;
-	font-weight: 900;
-	overflow: hidden;
-	line-height: 0.75;
-	color: #b2b0a9;
-    font-size: 5vw;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.75;
+    color: #b2b0a9;
+    font-size: 73px;
 }
 
 h3:after {
     content: "UNDER CONSTRUCTION";
     opacity: 0;
     color: black;
+    font-size: 73px;
+    padding-top: 50px;
 }
 
 h3:before {
@@ -159,7 +161,54 @@ h3:after, div:before {
 }
 .wrap:hover:after {
     opacity: 1;
+    padding-top: 50px;
 }
+
+@media screen and (max-width: 300px) {
+    h3 {
+        outline: none;
+        text-decoration: none;
+        position: relative;
+        font-size: 73px;
+        line-height: 1;
+        color: #b2b0a9;
+        display: inline-block;
+    }
+
+    h3, h3:after, h3:before {
+        text-transform: uppercase;
+        font-weight: 900;
+        overflow: hidden;
+        line-height: 0.75;
+        color: #b2b0a9;
+        font-size: 73px;
+    }
+
+    h3:after {
+        content: "UNDER CONSTRUCTION";
+        opacity: 0;
+        color: black;
+        font-size: 73px;
+        padding-top: 20%;
+    }
+
+    h3:before {
+        content: "PROJECTS";
+        opacity: 1;
+    }
+
+    h3:after, div:before {
+        transition: opacity 0.3s linear;
+    }
+
+    .wrap:hover:before {
+        opacity: 0.2;
+    }
+    .wrap:hover:after {
+        opacity: 1;
+    }
+}
+
 
 /* END of Animation for Projects */
 
@@ -171,14 +220,13 @@ h3:after, div:before {
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-	color: #b2b0a9;
-    font-size: 5vw;
+	color: #606060;
+    font-size: 75px;
     float: left;
-
 }
 
 .link--contact:hover {
-	color: #b2b0a9;
+	color: #606060;
 }
 
 .link--contact::after {
@@ -204,7 +252,7 @@ h3:after, div:before {
 	position: absolute;
 	z-index: 2;
 	overflow: hidden;
-	color: #FF3399;
+	color: #FF9933;
 	white-space: nowrap;
 	width: 0%;
 	transition: width 0.2s 0.1s;
@@ -216,10 +264,6 @@ h3:after, div:before {
 
 /* END of Animation for Contact */
 
-hr {
-	width: 70%;
-	border-color: #C0C0C0;
-}
 
 p {
     font-size: 20px;;
@@ -273,20 +317,23 @@ p {
 }
 
 #fullpage{
-    padding: 0 10% 0 10%;
+    padding: 0 12% 0 5%;
 }
 
+#aboutpar {
+    padding: 15vh 8px 0 30px;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+}
 
-.sectionabout{
-    margin: 10% 0 10% 0;
+#me{
+    float:right;
+    border-radius: 10%;
 }
 
 .fab{
 	font-size: 20px;
-}
-
-.sectionabout {
-    margin: 40px 10px 0 10px;
 }
 
 
@@ -297,8 +344,16 @@ p {
 .about {
 	font-size: 40px;
 	margin-top: 8px;
-	text-align: center;
-	
+	text-align: left;
+}
+
+#profile{
+    padding-top: 18vh;
+}
+
+.aboutmediv {
+    padding-left: 15%;
+
 }
 
 #aboutheader{
@@ -320,3 +375,4 @@ p {
 #underprojects{
     width: 135px;
 }
+
