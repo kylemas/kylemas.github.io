@@ -6,6 +6,12 @@ a {
     text-decoration: none !important;
 }
 
+img {
+    max-width: 250px;
+    max-height: 350px;
+    border-radius: 50%;
+}
+
 .link {
 	outline: none;
 	text-decoration: none;
@@ -119,151 +125,6 @@ a {
 
 /* END of Animation for About */
 
-/* START of Animation for Projects */
-
-h3 {
-    outline: none;
-    text-decoration: none;
-    position: relative;
-    font-size: 73px;
-    line-height: 1;
-    color: #b2b0a9;
-    display: inline-block;
-}
-
-h3, h3:after, h3:before {
-    text-transform: uppercase;
-    font-weight: 900;
-    overflow: hidden;
-    line-height: 0.75;
-    color: #b2b0a9;
-    font-size: 73px;
-}
-
-h3:after {
-    content: "UNDER CONSTRUCTION";
-    opacity: 0;
-    color: black;
-    font-size: 73px;
-    padding-top: 50px;
-}
-
-h3:before {
-    content: "PROJECTS";
-    opacity: 1;
-}
-
-h3:after, div:before {
-    transition: opacity 0.3s linear;
-}
-
-.wrap:hover:before {
-    opacity: 0.2;
-}
-.wrap:hover:after {
-    opacity: 1;
-    padding-top: 50px;
-}
-
-@media screen and (max-width: 300px) {
-    h3 {
-        outline: none;
-        text-decoration: none;
-        position: relative;
-        font-size: 73px;
-        line-height: 1;
-        color: #b2b0a9;
-        display: inline-block;
-    }
-
-    h3, h3:after, h3:before {
-        text-transform: uppercase;
-        font-weight: 900;
-        overflow: hidden;
-        line-height: 0.75;
-        color: #b2b0a9;
-        font-size: 73px;
-    }
-
-    h3:after {
-        content: "UNDER CONSTRUCTION";
-        opacity: 0;
-        color: black;
-        font-size: 73px;
-        padding-top: 20%;
-    }
-
-    h3:before {
-        content: "PROJECTS";
-        opacity: 1;
-    }
-
-    h3:after, div:before {
-        transition: opacity 0.3s linear;
-    }
-
-    .wrap:hover:before {
-        opacity: 0.2;
-    }
-    .wrap:hover:after {
-        opacity: 1;
-    }
-}
-
-
-/* END of Animation for Projects */
-
-
-/* START of Animation for CONTACT */
-
-.link--contact {
-	text-transform: uppercase;
-	font-weight: 900;
-	overflow: hidden;
-	line-height: 0.75;
-	color: #606060;
-    font-size: 75px;
-    float: left;
-}
-
-.link--contact:hover {
-	color: #606060;
-}
-
-.link--contact::after {
-	content: '';
-	position: absolute;gi
-	height: 16px;
-	width: 100%;
-	top: 50%;
-	margin-top: -8px;
-	right: 0;
-	background: #F9F9F9;
-	transform: translate3d(-100%,0,0);
-	transition: transform 0.4s;
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-}
-
-.link--contact:hover::after {
-	transform: translate3d(100%,0,0);
-}
-
-.link--contact::before {
-	content: attr(data-letters);
-	position: absolute;
-	z-index: 2;
-	overflow: hidden;
-	color: #FF9933;
-	white-space: nowrap;
-	width: 0%;
-	transition: width 0.2s 0.1s;
-}
-
-.link--contact:hover::before {
-	width: 100%;
-}
-
-/* END of Animation for Contact */
 
 
 p {
@@ -271,45 +132,7 @@ p {
     margin-left: 2%;
 }
 
-.icon-bar {
-    width: 22px;
-    height: 2px;
-    background-color: #B6B6B6;
-    display: block;
-    transition: all 0.2s;
-    margin-top: 4px
-}
 
-.navbar-toggler {
-    border: none;
-    background: transparent !important;
-}
-
-.navbar-toggler .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-}
-
-.navbar-toggler .middle-bar {
-    opacity: 0;
-}
-
-.navbar-toggler .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-.navbar-toggler.collapsed .top-bar {
-    transform: rotate(0);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0);
-}
 
 .icons {
     position: fixed;
@@ -369,26 +192,6 @@ p {
 .aboutmediv {
     padding-left: 15%;
 
-}
-
-#aboutheader{
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-    text-align: left;
-}
-
-#underabout {
-	margin-top: 2px;
-	width: 135px;
-	border-color: black;
-}
-
-#projectsheader {
-    text-align: center;
-}
-
-#underprojects{
-    width: 135px;
 }
 
 
