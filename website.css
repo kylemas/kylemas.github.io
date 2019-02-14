@@ -331,7 +331,8 @@ p {
 }
 
 #fullpage{
-    padding: 0 12% 20% 5%;
+    padding: 0 12% 10% 5%;
+    background-color: transparent;
 }
 
 #aboutpar {
