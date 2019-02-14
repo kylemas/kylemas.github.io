@@ -15,6 +15,6 @@ function typeEffect(element, speed) {
 
 $( document ).ready(function() {
   var speed = 50;
-  var delay = $('#hi').text().length * speed + speed;
-  typeEffect($('#hi'), speed);
+  var delay = $('h1').text().length * speed + speed;
+  typeEffect($('h1'), speed);
 });
