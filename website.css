@@ -26,10 +26,10 @@ p {
 }
 
 .link {
-	position: relative;
-	font-size: 80px;
-	line-height: 1;
-	display: inline-block;
+    position: relative;
+    font-size: 80px;
+    line-height: 1;
+    display: inline-block;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -41,3 +41,15 @@ p {
     width: 70%;
 }
 
+.contact {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.nowwhat {
+    margin-bottom: 3%;
+}
+
+.iconcontainer {
+    margin-right: 5%;
+}
